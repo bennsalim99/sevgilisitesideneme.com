@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff5c8d;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.love-quote {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #aa0000;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    position: relative;
+    text-align: center;
+}
+
+.image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.gift-box {
+    margin-top: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gift-box:hover {
+    transform: scale(1.2);
+}
+
+#love-message {
+    display: none;
+    font-size: 2em;
+    color: #ff0000;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
